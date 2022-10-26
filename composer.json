@@ -1,9 +1,9 @@
 {
-    "name": "zhusaidong/laravel-admin-grid-exporter",
+    "name": "asuratu/laravel-admin-grid-exporter",
     "description": "laravel-admin grid-exporter",
     "type": "library",
     "keywords": ["laravel-admin", "extension", "grid-exporter"],
-    "homepage": "https://github.com/zhusaidong/laravel-admin-grid-exporter",
+    "homepage": "https://github.com/asuratu/laravel-admin-grid-exporter",
     "license": "MIT",
     "authors": [
         {
