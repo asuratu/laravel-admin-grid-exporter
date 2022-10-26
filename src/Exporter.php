@@ -211,6 +211,7 @@ class Exporter extends AbstractExporter implements FromCollection, WithHeadings,
         if ($str == '') {
             return '';
         }
-        return trim(str_replace($filter, '', strip_tags(preg_replace(/** @lang text */ '/<script(.*)>(.*)<\/script>|<template(.*)>(.*)<\/template>/iUs', '', $str))));
+        $result =  trim(str_replace($filter, '', strip_tags(preg_replace(/** @lang text */ '/<script(.*)>(.*)<\/script>|<template(.*)>(.*)<\/template>/iUs', '', $str))));
+        return html_entity_decode($result);
     }
 }
