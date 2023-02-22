@@ -203,12 +203,12 @@ class Exporter extends AbstractExporter implements FromCollection, WithHeadings,
     /**
      * 过滤函数
      * @param array $filter
-     * @param string $str
+     * @param string|null $str
      * @return string
      */
-    protected static function strFilter(array $filter, string $str): string
+    protected static function strFilter(array $filter, string|null $str): string
     {
-        if ($str == '') {
+        if (empty($str)) {
             return '';
         }
         $result =  trim(str_replace($filter, '', strip_tags(preg_replace(/** @lang text */ '/<script(.*)>(.*)<\/script>|<template(.*)>(.*)<\/template>/iUs', '', $str))));
